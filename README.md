@@ -1,4 +1,4 @@
-### rust-project-euler
+#### rust-project-euler
 Rust based solutions to Project Euler.
 
 ## Disclaimer:
