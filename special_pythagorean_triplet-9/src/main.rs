@@ -6,8 +6,6 @@
 // There exists exactly one Pythagorean triplet for which a + b + c = 1000.
 // Find the product abc.
 
-// THIS IS A TERRIBLE SOLUTION, MAYBE REFACTOR LATER.
-
 fn main() {
     'outer: for a in 1..1001 {
         for b in 1..1001 {
