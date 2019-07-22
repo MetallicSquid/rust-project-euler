@@ -2,7 +2,7 @@
 Rust based solutions to Project Euler.
 
 # Disclaimer:
-    This repository contains potential answers to the Projectg Euler mathematical/programming based challanges. You should not use these answers as a method of answering the questions to get meaningless internet points - that's cheating. 
+This repository contains potential answers to the Projectg Euler mathematical/programming based challanges. You should not use these answers as a method of answering the questions to get meaningless internet points - that's cheating. 
 
 # Solved:
     [x] 1 - Multiples of 3 and 5.   
