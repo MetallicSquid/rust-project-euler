@@ -1,10 +1,10 @@
-#### rust-project-euler
+# rust-project-euler
 Rust based solutions to Project Euler.
 
 ## Disclaimer:
 This repository contains potential answers to the Project Euler mathematical/programming based challanges. You should not use these answers as a method of answering the questions to get meaningless internet points - that's cheating. 
 
-## Solved:
+### Solved:
 - [x] 1 - Multiples of 3 and 5.   
 - [x] 2 - Even fibonacci numbers.
 - [x] 3 - Largest prime factor. 
