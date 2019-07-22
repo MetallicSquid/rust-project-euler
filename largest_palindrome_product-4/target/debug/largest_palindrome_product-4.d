@@ -1,0 +1,1 @@
+C:\Users\gcmac\Desktop\rust-project-euler\largest_palindrome_product-4\target\debug\largest_palindrome_product-4.pdb: C:\Users\gcmac\Desktop\rust-project-euler\largest_palindrome_product-4\src\main.rs

@@ -1,0 +1,1 @@
+C:\Users\gcmac\Desktop\rust-project-euler\special_pythagorean_triplet-9\target\debug\special_pythagorean_triplet-9.pdb: C:\Users\gcmac\Desktop\rust-project-euler\special_pythagorean_triplet-9\src\main.rs
