@@ -15,3 +15,8 @@ This repository contains potential answers to the Project Euler mathematical/pro
 - [x] 8 - Largest product in a series.
 - [x] 9 - Special pythagorean triplet. 
 - [x] 10 - Summation of primes. REFACTOR - I think it took roughly 10 mins.
+- [ ] 11 - Largest product in a grid.
+- [ ] 12 - Highly divisible triangular number.
+- [x] 13 - Large sum.
+- [x] 14 - Longest Collatz sequence.
+- [ ] 15 - Lattice paths.
