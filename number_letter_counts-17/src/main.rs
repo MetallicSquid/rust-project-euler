@@ -14,7 +14,7 @@ fn main() {
     let mut total: i32 = 0;
     
     let mut prim_letters = HashMap::new();
-    // All correct.
+
     prim_letters.insert(1, 3);
     prim_letters.insert(2, 3);
     prim_letters.insert(3, 5);
@@ -26,7 +26,7 @@ fn main() {
     prim_letters.insert(9, 4);
     
     let mut teen_letters = HashMap::new();
-    // All correct.
+
     teen_letters.insert(1, 6);
     teen_letters.insert(2, 6);
     teen_letters.insert(3, 8);
@@ -38,7 +38,7 @@ fn main() {
     teen_letters.insert(9, 8);
 
     let mut tens_letters = HashMap::new();
-    // All correct.
+
     tens_letters.insert(1, 3);
     tens_letters.insert(2, 6);
     tens_letters.insert(3, 6);
@@ -50,7 +50,7 @@ fn main() {
     tens_letters.insert(9, 6);
 
     let mut hund_letters = HashMap::new();
-    // All correct.
+
     hund_letters.insert(1, 10);
     hund_letters.insert(2, 10);
     hund_letters.insert(3, 12);
@@ -61,50 +61,50 @@ fn main() {
     hund_letters.insert(8, 12);
     hund_letters.insert(9, 11);
 
-    for n in 1..2 {
-        let target = 115.to_string();
-        println!("Target: {}", target);
+    for n in 1..1001 {
+        let target = n.to_string();
+        // println!("Target: {}", target);
         let mut target_vec: Vec<&str> = target.split("").collect();
         target_vec.remove(0);
         target_vec.remove(target_vec.len() - 1);
         'outer: for n in 0..target_vec.len() {
             if target_vec.len() == 1 {
-                println!("Number: {}, Letters: {}", target_vec[n], prim_letters.entry(target_vec[n].parse::<i32>().unwrap()).or_insert(0));
+                // println!("Number: {}, Letters: {}", target_vec[n], prim_letters.entry(target_vec[n].parse::<i32>().unwrap()).or_insert(0));
                 total += *prim_letters.entry(target_vec[n].parse::<i32>().unwrap()).or_insert(0);
             } else if target_vec.len() == 2 {
                 if n == 0 && target_vec[n] == "1" && target_vec[n + 1] != "0" {
-                    println!("Teen Number: {}, Letters: {}", target_vec[n + 1], teen_letters.entry(target_vec[n + 1].parse::<i32>().unwrap()).or_insert(0));
+                    // println!("Teen Number: {}, Letters: {}", target_vec[n + 1], teen_letters.entry(target_vec[n + 1].parse::<i32>().unwrap()).or_insert(0));
                     total += *teen_letters.entry(target_vec[n + 1].parse::<i32>().unwrap()).or_insert(0);
                     break 'outer;
                 } else if n == 0 {
-                    println!("Tens Number: {}, Letters: {}", target_vec[n], tens_letters.entry(target_vec[n].parse::<i32>().unwrap()).or_insert(0));
+                    // println!("Tens Number: {}, Letters: {}", target_vec[n], tens_letters.entry(target_vec[n].parse::<i32>().unwrap()).or_insert(0));
                     total += *tens_letters.entry(target_vec[n].parse::<i32>().unwrap()).or_insert(0);
                 } else if n == 1 {
-                    println!("Number: {}, Letters: {}", target_vec[n], prim_letters.entry(target_vec[n].parse::<i32>().unwrap()).or_insert(0));
+                    // println!("Number: {}, Letters: {}", target_vec[n], prim_letters.entry(target_vec[n].parse::<i32>().unwrap()).or_insert(0));
                     total += *prim_letters.entry(target_vec[n].parse::<i32>().unwrap()).or_insert(0);
                 }
             } else if target_vec.len() == 3 {
                 if n == 0 {
-                    println!("Hund Number: {}, Letters: {}", target_vec[n], hund_letters.entry(target_vec[n].parse::<i32>().unwrap()).or_insert(0));
+                    // println!("Hund Number: {}, Letters: {}", target_vec[n], hund_letters.entry(target_vec[n].parse::<i32>().unwrap()).or_insert(0));
                     total += *hund_letters.entry(target_vec[n].parse::<i32>().unwrap()).or_insert(0);
                 } else if n == 1 {
                     if target_vec[n] == "1" && target_vec[n + 1] != "0" {
-                        println!("Teen Number: {}, Letters: {}", target_vec[n + 1], teen_letters.entry(target_vec[n + 1].parse::<i32>().unwrap()).or_insert(0));
+                        // println!("Teen Number: {}, Letters: {}", target_vec[n + 1], teen_letters.entry(target_vec[n + 1].parse::<i32>().unwrap()).or_insert(0));
                         total += *teen_letters.entry(target_vec[n + 1].parse::<i32>().unwrap()).or_insert(0);
-                        if target_vec[1] != "0" && target_vec[2] != "0" {
-                            println!("And (+3)");
+                        if target_vec[1] != "0" || target_vec[2] != "0" {
+                            // println!("And (+3)");
                             total += 3;
                         }
                         break 'outer;
                     } else {
-                        println!("Tens Number: {}, Letters: {}", target_vec[n], tens_letters.entry(target_vec[n].parse::<i32>().unwrap()).or_insert(0));
+                        // println!("Tens Number: {}, Letters: {}", target_vec[n], tens_letters.entry(target_vec[n].parse::<i32>().unwrap()).or_insert(0));
                         total += *tens_letters.entry(target_vec[n].parse::<i32>().unwrap()).or_insert(0);
                     }
                 } else if n == 2 {
-                    println!("Number: {}, Letters: {}", target_vec[n], prim_letters.entry(target_vec[n].parse::<i32>().unwrap()).or_insert(0));
+                    // println!("Number: {}, Letters: {}", target_vec[n], prim_letters.entry(target_vec[n].parse::<i32>().unwrap()).or_insert(0));
                     total += *prim_letters.entry(target_vec[n].parse::<i32>().unwrap()).or_insert(0);
-                    if target_vec[1] != "0" && target_vec[2] != "0" {
-                        println!("And (+3)");
+                    if target_vec[1] != "0" || target_vec[2] != "0" {
+                        // println!("And (+3)");
                         total += 3;
                     }
                 }
@@ -112,7 +112,6 @@ fn main() {
                 total += 11;
             }
         }
-        println!("Sub Total: {}", total);
     }
     println!("Total: {}", total);
 }
