@@ -24,3 +24,7 @@ This repository contains potential answers to the Project Euler mathematical/pro
 - [ ] 15 - Lattice paths.
 - [ ] 16 - Power digit sum.
 - [x] 17 - Number letter counts.
+- [ ] 18 - Maximum path sum I. - Very close.
+- [ ] 19 - Counting sundays.
+- [ ] 20 - Factorial digit sum.
+- [x] 21 - Amicable numbers.
