@@ -28,3 +28,5 @@ This repository contains potential answers to the Project Euler mathematical/pro
 - [ ] 19 - Counting sundays.
 - [ ] 20 - Factorial digit sum.
 - [x] 21 - Amicable numbers.
+- [ ] 22 - Names scores.
+- [ ] 23 - Non-abundant sums.
