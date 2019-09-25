@@ -7,7 +7,7 @@ I am trying to solve the problems by only using the standard library and no exte
 This repository contains potential answers to the Project Euler mathematical/programming based challanges. You should not use these answers as a method of answering the questions to get meaningless internet points - that's cheating. 
 
 ### Solved:
-- [x] 1 - Multiples of 3 and 5.   
+- [x] 1 - Multiples of 3 and 5. [Link](multiples_of_3_and_5-1)
 - [x] 2 - Even fibonacci numbers.
 - [x] 3 - Largest prime factor. 
 - [x] 4 - Largest palindrome product.
