@@ -30,3 +30,4 @@ This repository contains potential answers to the Project Euler mathematical/pro
 - [x] 21 - Amicable numbers.
 - [ ] 22 - Names scores.
 - [ ] 23 - Non-abundant sums.
+- [ ] 24 - Lexographic permutations.
